@@ -14,5 +14,9 @@ module.exports = {
    */
   sidebarLogo: true,
 
+  /**
+   * @type {boolean} true | false
+   * @description 是否打开tagsView
+   */
   tagsView: true
 }
