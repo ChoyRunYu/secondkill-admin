@@ -188,6 +188,7 @@ export default {
       if (!this.isEdit) return
       if (this.editId === 0) return
       getGoodsById(this.editId).then(res => {
+        console.log(res.data)
         this.goodsForm = res.data
       })
     }
