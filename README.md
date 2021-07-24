@@ -1,90 +1,117 @@
-# vue-admin-template
+# 微服务秒杀系统-后台管理前端 
 
-English | [简体中文](./README-zh.md)
+<p align="center"> 
+ <img src="https://img.shields.io/badge/Vue%20-2.6.10-green.svg" alt="vue"/>
+ <img src="https://img.shields.io/badge/Element%20Ui%20-2.13.2-blue.svg" alt="element-ui"/>
+ <img src="https://img.shields.io/badge/Vue%20Router%20-3.0.6-blue.svg" alt="vue-router"/>
+ <img src="https://img.shields.io/badge/Vuex-3.1.0-green.svg" alt="vuex">
+ <img src="https://img.shields.io/badge/Axios-0.18.1-blue.svg" alt="axiso">
+</p>
 
-> A minimal vue admin template with Element UI & axios & iconfont & permission control & lint
+## 简介
 
-**Live demo:** http://panjiachen.github.io/vue-admin-template
+微服务秒杀系统采用了前后端分离的模式，前端采用了Vue全家桶 + Element-Ui组件，后端采用Spring Cloud全家桶开发而成。此项目是本秒杀系统的后台管理前端。
 
+后台管理主要是使用了vue-admin-template进行二次开发。
 
-**The current version is `v4.0+` build on `vue-cli`. If you want to use the old version , you can switch branch to [tag/3.11.0](https://github.com/PanJiaChen/vue-admin-template/tree/tag/3.11.0), it does not rely on `vue-cli`**
+## 项目链接
 
-## Build Setup
+- [用户秒杀前端](https://github.com/ChoyRunYu/secondkill-vue)
+- [微服务秒杀系统后端](https://github.com/ChoyRunYu/secondkill)
 
-```bash
-# clone the project
-git clone https://github.com/PanJiaChen/vue-admin-template.git
+## 相关技术
 
-# enter the project directory
-cd vue-admin-template
+| 技术       | 版本号 |
+| ---------- | :----: |
+| vue        | 2.6.10 |
+| vuex       | 3.1.0  |
+| vue-router | 3.0.6  |
+| axios      | 0.18.1 |
+| element-ui | 2.13.2 |
 
-# install dependency
+## 目录结构
+
+```
+├── build						构建目录
+├── mock						mock目录
+├── public						公共目录
+│  ├── favicon.ico					favicon图标
+│  └── index.html					首页入口文件
+├── src							源代码目录
+│  ├── api							api请求接口目录
+│  ├── assets						静态文件目录
+│  ├── components					组件目录
+│  ├── layout						组件布局目录
+│  ├── router						路由目录
+│  ├── store						Vuex目录
+│  ├── styles						样式目录
+│  ├── utils						工具类目录
+│  ├── views						主要页面目录
+│  ├── App.vue						项目入口文件
+│  ├── main.js						项目核心文件
+│  ├── permission.js				项目权限文件
+│  └── setting.js					项目配置文件
+├── test						测试目录
+├── .env.production				生产环境
+├── .env.development			开发环境
+├── .eslistignore
+├── .eslistrc.js
+├── .editorconfig
+├── .travis.yml
+├── jest.config.js
+├── jsconfig.json
+├── bable.config.js
+├── postcss.config.js
+├── package.json
+├── README.md
+└── vue.config.js
+```
+
+## 跑起来
+
+```
+# 克隆代码
+git clont https://github.com/ChoyRunYu/secondkill-admin
+
+# 进入目录
+cd secondkill-admin
+
+# 安装依赖
 npm install
 
-# develop
+# 建议不要直接使用 cnpm 安装以来，会有各种诡异的 bug。可以通过如下操作解决 npm 下载速度慢的问题
+npm install --registry=https://registry.npm.taobao.org
+
+# 运行
 npm run dev
 ```
 
-This will automatically open http://localhost:9528
+## 发布
 
-## Build
-
-```bash
-# build for test environment
+```
+# 构建测试环境
 npm run build:stage
 
-# build for production environment
+# 构建生产环境
 npm run build:prod
 ```
 
-## Advanced
+## 其他
 
-```bash
-# preview the release environment effect
+```
+# 预览发布环境效果
 npm run preview
 
-# preview the release environment effect + static resource analysis
+# 预览发布环境效果 + 静态资源分析
 npm run preview -- --report
 
-# code format check
+# 代码格式检查
 npm run lint
 
-# code format check and auto fix
+# 代码格式检查并自动修复
 npm run lint -- --fix
 ```
 
-Refer to [Documentation](https://panjiachen.github.io/vue-element-admin-site/guide/essentials/deploy.html) for more information
+## 系统截图
 
-## Demo
-
-![demo](https://github.com/PanJiaChen/PanJiaChen.github.io/blob/master/images/demo.gif)
-
-## Extra
-
-If you want router permission && generate menu by user roles , you can use this branch [permission-control](https://github.com/PanJiaChen/vue-admin-template/tree/permission-control)
-
-For `typescript` version, you can use [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template) (Credits: [@Armour](https://github.com/Armour))
-
-## Related Project
-
-- [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
-
-- [electron-vue-admin](https://github.com/PanJiaChen/electron-vue-admin)
-
-- [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template)
-
-- [awesome-project](https://github.com/PanJiaChen/vue-element-admin/issues/2312)
-
-## Browsers support
-
-Modern browsers and Internet Explorer 10+.
-
-| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>IE / Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
-| --------- | --------- | --------- | --------- |
-| IE10, IE11, Edge| last 2 versions| last 2 versions| last 2 versions
-
-## License
-
-[MIT](https://github.com/PanJiaChen/vue-admin-template/blob/master/LICENSE) license.
-
-Copyright (c) 2017-present PanJiaChen
+暂无

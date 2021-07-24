@@ -1,8 +1,8 @@
 {
-  "name": "vue-admin-template",
-  "version": "4.4.0",
-  "description": "A vue admin template with Element UI & axios & iconfont & permission control & lint",
-  "author": "Pan <panfree23@gmail.com>",
+  "name": "secondkill-admin",
+  "version": "1.1.0",
+  "description": "微服务后端管理系统前端，基于vue-admin-template的二次开发",
+  "author": "Choy runyu<1063978024@qq.com>",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build:prod": "vue-cli-service build",
