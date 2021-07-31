@@ -16,8 +16,10 @@
 
 ## 项目链接
 
-- [用户秒杀前端](https://github.com/ChoyRunYu/secondkill-vue)
-- [微服务秒杀系统后端](https://github.com/ChoyRunYu/secondkill)
+| 名称               | github                                      | gitee                                      |
+| ------------------ | ------------------------------------------- | ------------------------------------------ |
+| 秒杀前端           | https://github.com/ChoyRunYu/secondkill-vue | https://gitee.com/Choyrunyu/secondkill-vue |
+| 微服务秒杀系统后端 | https://github.com/ChoyRunYu/secondkill     | https://gitee.com/Choyrunyu/secondkill     |
 
 ## 相关技术
 
@@ -67,11 +69,13 @@
 └── vue.config.js
 ```
 
-## 跑起来
+## 快速开始
+
+### 本地开发
 
 ```
 # 克隆代码
-git clont https://github.com/ChoyRunYu/secondkill-admin
+git clone https://github.com/ChoyRunYu/secondkill-admin
 
 # 进入目录
 cd secondkill-admin
@@ -86,23 +90,20 @@ npm install --registry=https://registry.npm.taobao.org
 npm run dev
 ```
 
-## Docker部署
+### Docker部署
 
 ```
 # 克隆代码
-git clont https://github.com/ChoyRunYu/secondkill-admin
+git clone https://github.com/ChoyRunYu/secondkill-admin
  
-# 进入目录
-cd secondkill-admin
-
-# 安装依赖、构建
-npm install && npm run build:docker
+# 进入目录、安装依赖、构建
+cd secondkill-admin && npm install && npm run build:docker
 
 # docker启动
 cd docker && docker-compost up -d
 ```
 
-## 发布
+### 发布
 
 ```
 # 构建测试环境
@@ -112,7 +113,7 @@ npm run build:stage
 npm run build:prod
 ```
 
-## 其他
+### 其他
 
 ```
 # 预览发布环境效果
