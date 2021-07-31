@@ -7,7 +7,7 @@ services:
         container_name: secondkill-admin
         restart: always
         ports: 
-            - 8888:80
+            - 8888:8888
         networks: 
             - secondkill_default
         external_links: 
