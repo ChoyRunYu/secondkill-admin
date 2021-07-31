@@ -95,8 +95,11 @@ git clont https://github.com/ChoyRunYu/secondkill-admin
 # 进入目录
 cd secondkill-admin
 
-# 安装依赖、启动
-npm install && cd docker && docker-compost up -d
+# 安装依赖、构建
+npm install && npm run build:docker
+
+# docker启动
+cd docker && docker-compost up -d
 ```
 
 ## 发布
