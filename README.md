@@ -86,6 +86,19 @@ npm install --registry=https://registry.npm.taobao.org
 npm run dev
 ```
 
+## Docker部署
+
+```
+# 克隆代码
+git clont https://github.com/ChoyRunYu/secondkill-admin
+ 
+# 进入目录
+cd secondkill-admin
+
+# 安装依赖、启动
+npm install && cd docker && docker-compost up -d
+```
+
 ## 发布
 
 ```
