@@ -94,13 +94,13 @@ npm run dev
 
 ```
 # 克隆代码
-git clone https://github.com/ChoyRunYu/secondkill-admin
+git clone https://github.com/ChoyRunYu/secondkill-admin.git
  
 # 进入目录、安装依赖、构建
 cd secondkill-admin && npm install && npm run build:docker
 
 # docker启动
-cd docker && docker-compost up -d
+cd docker && docker-compose up -d
 ```
 
 ### 发布
