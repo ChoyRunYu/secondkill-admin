@@ -7,6 +7,8 @@ function resolve(dir) {
 }
 
 const name = defaultSettings.title || 'secondkill' // page title
+// api接口
+const url = 'http://secondkill-zuul:8000/'
 
 // If your port is set to 80,
 // use administrator privileges to execute the command line.
@@ -36,6 +38,15 @@ module.exports = {
     overlay: {
       warnings: false,
       errors: true
+    },
+    proxy: {
+      '/': {
+        target: url,
+        ws: true,
+        pathRewrite: {
+          '^/': '/'
+        }
+      }
     }
     // before: require('./mock/mock-server.js')
   },

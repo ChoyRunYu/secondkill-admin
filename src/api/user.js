@@ -7,7 +7,7 @@ import request from '@/utils/request'
  */
 export function login(data) {
   return request({
-    url: '/auth/admin',
+    url: '/api/auth/admin',
     method: 'post',
     data
   })
@@ -19,7 +19,7 @@ export function login(data) {
  */
 export function getInfo() {
   return request({
-    url: '/user/admin/info',
+    url: '/api/user/admin/info',
     method: 'get'
   })
 }
@@ -30,7 +30,7 @@ export function getInfo() {
  */
 export function logout() {
   return request({
-    url: '/auth/logout',
+    url: '/api/auth/logout',
     method: 'post'
   })
 }
@@ -42,7 +42,7 @@ export function logout() {
  */
 export function listUser(page) {
   return request({
-    url: '/user/admin/listUser/' + page,
+    url: '/api/user/admin/listUser/' + page,
     method: 'get'
   })
 }
@@ -54,7 +54,7 @@ export function listUser(page) {
  */
 export function delUser(data) {
   return request({
-    url: '/user/admin/delUser',
+    url: '/api/user/admin/delUser',
     method: 'post',
     data
   })
@@ -68,7 +68,7 @@ export function delUser(data) {
  */
 export function updateUserIsEnable(userId, enable) {
   return request({
-    url: '/user/admin/change/enable',
+    url: '/api/user/admin/change/enable',
     method: 'post',
     data: { userId: userId, enable: enable }
   })
@@ -81,7 +81,7 @@ export function updateUserIsEnable(userId, enable) {
  */
 export function addUser(user) {
   return request({
-    url: '/user/admin/insertUser',
+    url: '/api/user/admin/insertUser',
     method: 'post',
     data: user
   })
@@ -93,7 +93,7 @@ export function addUser(user) {
  */
 export function getUserById(id) {
   return request({
-    url: '/user/admin/getUser/' + id,
+    url: '/api/user/admin/getUser/' + id,
     method: 'get'
   })
 }
@@ -105,7 +105,7 @@ export function getUserById(id) {
  */
 export function updateUser(user) {
   return request({
-    url: '/user/admin/updateUser',
+    url: '/api/user/admin/updateUser',
     method: 'post',
     data: user
   })

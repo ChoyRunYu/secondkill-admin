@@ -7,7 +7,7 @@ import request from '@/utils/request'
  */
 export function listMsGoods(page) {
   return request({
-    url: '/goods/admin/listMsGoods/' + page,
+    url: '/api/goods/admin/listMsGoods/' + page,
     method: 'get'
   })
 }
@@ -19,7 +19,7 @@ export function listMsGoods(page) {
  */
 export function delMsGoods(data) {
   return request({
-    url: '/goods/admin/delMsGoods',
+    url: '/api/goods/admin/delMsGoods',
     method: 'post',
     data: { msGoodsIds: data }
   })
@@ -32,7 +32,7 @@ export function delMsGoods(data) {
  */
 export function getMsActivityById(msGoodsId) {
   return request({
-    url: '/goods/admin/getMsGoods/' + msGoodsId,
+    url: '/api/goods/admin/getMsGoods/' + msGoodsId,
     method: 'get'
   })
 }
@@ -44,7 +44,7 @@ export function getMsActivityById(msGoodsId) {
  */
 export function updateMsActivity(data) {
   return request({
-    url: '/goods/admin/editMsGoods',
+    url: '/api/goods/admin/editMsGoods',
     method: 'post',
     data
   })

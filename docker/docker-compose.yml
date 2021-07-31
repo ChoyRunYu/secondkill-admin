@@ -1,0 +1,18 @@
+version: '3'
+services: 
+    secondkill-admin:
+        build: 
+            context: .
+        image: secondkill-admin
+        container_name: secondkill-admin
+        restart: always
+        ports: 
+            - 8888:80
+        networks: 
+            - secondkill_default
+        external_links: 
+            - secondkill-zuul
+
+networks: 
+    secondkill_default:
+        external: true

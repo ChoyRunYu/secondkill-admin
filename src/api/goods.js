@@ -7,7 +7,7 @@ import request from '@/utils/request'
  */
 export function listGoods(page) {
   return request({
-    url: '/goods/admin/listGoods/' + page,
+    url: '/api/goods/admin/listGoods/' + page,
     method: 'get'
   })
 }
@@ -19,7 +19,7 @@ export function listGoods(page) {
  */
 export function delGoods(data) {
   return request({
-    url: '/goods/admin/delGoods',
+    url: '/api/goods/admin/delGoods',
     method: 'post',
     data: { goodsIds: data }
   })
@@ -32,7 +32,7 @@ export function delGoods(data) {
  */
 export function addMsActivity(data) {
   return request({
-    url: '/goods/admin/addMsGoods',
+    url: '/api/goods/admin/addMsGoods',
     method: 'post',
     data
   })
@@ -45,7 +45,7 @@ export function addMsActivity(data) {
  */
 export function addGoods(data) {
   return request({
-    url: '/goods/admin/addGoods',
+    url: '/api/goods/admin/addGoods',
     method: 'post',
     data
   })
@@ -58,7 +58,7 @@ export function addGoods(data) {
  */
 export function editGoods(data) {
   return request({
-    url: '/goods/admin/editGoods',
+    url: '/api/goods/admin/editGoods',
     method: 'post',
     data
   })
@@ -71,7 +71,7 @@ export function editGoods(data) {
  */
 export function getGoodsById(id) {
   return request({
-    url: '/goods/admin/getGoods/' + id,
+    url: '/api/goods/admin/getGoods/' + id,
     method: 'get'
   })
 }

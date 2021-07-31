@@ -7,7 +7,7 @@ import request from '@/utils/request'
  */
 export function listOrderByPage(page) {
   return request({
-    url: '/order/admin/listOrder/' + page,
+    url: '/api/order/admin/listOrder/' + page,
     method: 'get'
   })
 }
@@ -18,7 +18,7 @@ export function listOrderByPage(page) {
  */
 export function delOrder(ids) {
   return request({
-    url: '/order/admin/delOrder',
+    url: '/api/order/admin/delOrder',
     method: 'post',
     data: { orderIds: ids }
   })
